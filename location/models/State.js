@@ -52,7 +52,6 @@ const StateSchema = new mongoose.Schema(
   }
 );
 
-StateSchema.index({ name: 1 });
 StateSchema.index({ "districts.name": 1 });
 StateSchema.index({ "districts.mandals.name": 1 });
 
